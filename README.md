@@ -2,5 +2,6 @@ Very simple sample showing how to use rust together with *rocket* for a prototyp
 Use
 
 * [http://localhost:8000](http://localhost:8000) to get a "Hello, world!" message (text/plain) back into the browser 
+* [http://localhost:8000/hello](http://localhost:8000/hello) to get a "Hello, outside world!" message (text/plain) back into the browser 
 
 The source code is based on an article in *windows.developer* magazine 10/2021.

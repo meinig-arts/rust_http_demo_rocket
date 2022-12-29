@@ -6,6 +6,13 @@ fn index() -> &'static str {
     "Hello, world!"
 }
 
-fn main() {
-    rocket::ignite().mount("/", routes![index]).launch();
+#[get("/hello")]
+pub fn hello() -> &'static str {
+    "Hello, outside world!"
 }
+
+
+fn main() {
+    rocket::ignite().mount("/", routes![index, hello]).launch();
+}
+
